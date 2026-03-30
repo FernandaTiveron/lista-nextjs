@@ -1,4 +1,3 @@
-"use client";
 import NovaTarefa from "@/components/NovaTarefa";
 import { useState } from "react";
 import { useContadorDeTarefas } from "@/hooks/useContadorDeTarefas";
@@ -24,8 +23,8 @@ export default function Home() {
       <p>Total de tarefas: {total}</p>
 
       <ul>
-        {tarefas.map((tarefa, index) => (
-          <li key={index}>{tarefa}</li>
+        {tarefas.map((tarefa) => (
+          <li key={tarefa}>{tarefa}</li>
         ))}
       </ul>
     </main>

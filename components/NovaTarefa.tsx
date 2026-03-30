@@ -21,7 +21,6 @@ export default function NovaTarefa({ onAdicionar }: Props) {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        type="text"
         placeholder="Digite uma tarefa"
         value={tarefa}
         onChange={(e) => setTarefa(e.target.value)}
